@@ -687,6 +687,19 @@ ByteEncoding.unsigned((byte) 0xD6);                                 // 214
 ./gradlew test        # Windows: gradlew.bat test
 ```
 
+**Use it in your project** (Gradle, through [JitPack](https://jitpack.io/#Mr-Alireza82/Base-Conversion)):
+
+```kotlin
+repositories {
+    mavenCentral()
+    maven("https://jitpack.io")
+}
+
+dependencies {
+    implementation("com.github.Mr-Alireza82:Base-Conversion:v1.0.0")
+}
+```
+
 ---
 
 # Part E — Reference
@@ -782,7 +795,7 @@ With bits, bytes and hex in hand, the next step is the first real operation on t
 
 **Related articles:**
 
-- XOR — Exclusive OR *(next)*
+- [XOR — Exclusive OR](https://github.com/Mr-Alireza82/XOR) *(next)*
 - DES — Data Encryption Standard *(planned)*
 - [ANSI X9.19 — Retail MAC Algorithm](https://github.com/Mr-Alireza82/ANSI-X9.19-Retail-MAC-Algorithm)
 

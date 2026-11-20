@@ -1,11 +1,13 @@
 // Standalone build: pure Java 17 library, checked against the Android API (minSdk 26, core library desugaring).
+// Published through JitPack: com.github.Mr-Alireza82:Base-Conversion:<tag>
 plugins {
     `java-library`
+    `maven-publish`
     id("ru.vyarus.animalsniffer") version "2.0.1"
 }
 
-group = "com.psp.pos"
-version = "1.0-SNAPSHOT"
+group = "com.github.Mr-Alireza82"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
@@ -16,6 +18,10 @@ dependencies {
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+}
+
+java {
+    withSourcesJar()
 }
 
 animalsniffer {
@@ -29,4 +35,12 @@ tasks.withType<JavaCompile>().configureEach {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            from(components["java"])
+        }
+    }
 }
