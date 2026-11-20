@@ -785,3 +785,9 @@ With bits, bytes and hex in hand, the next step is the first real operation on t
 - XOR — Exclusive OR *(next)*
 - DES — Data Encryption Standard *(planned)*
 - [ANSI X9.19 — Retail MAC Algorithm](https://github.com/Mr-Alireza82/ANSI-X9.19-Retail-MAC-Algorithm)
+
+---
+
+## License
+
+[MIT](LICENSE) — free to use, copy, modify and share, including commercially. Keep the copyright notice.
