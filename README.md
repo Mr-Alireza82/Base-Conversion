@@ -696,7 +696,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.Mr-Alireza82:Base-Conversion:v1.0.0")
+    implementation("com.github.Mr-Alireza82:Base-Conversion:v1.0.1")
 }
 ```
 
