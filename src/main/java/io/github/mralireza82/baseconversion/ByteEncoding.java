@@ -1,4 +1,4 @@
-package com.psp.pos.shared.baseconversion;
+package io.github.mralireza82.baseconversion;
 
 import java.util.Objects;
 

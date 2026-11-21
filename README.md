@@ -645,7 +645,7 @@ So the library has two families:
 
 ## 17. Using the Library
 
-Package `com.psp.pos.shared.baseconversion`, pure Java 17, no dependencies, Android-compatible.
+Package `io.github.mralireza82.baseconversion`, pure Java 17, no dependencies.
 
 | Class | Use it for |
 |---|---|
@@ -681,7 +681,7 @@ ByteEncoding.unsigned((byte) 0xD6);                                 // 214
 
 **How it is tested:** every conversion, in all 12 directions, is compared with the JDK's own `BigInteger` conversion for thousands of random numbers up to 200 bits, and the simple methods are compared with the quick ones.
 
-**Run it yourself:** the code is in [`src/main/java`](src/main/java/com/psp/pos/shared/baseconversion) and the tests in [`src/test/java`](src/test/java/com/psp/pos/shared/baseconversion). With Java 17 or newer installed:
+**Run it yourself:** the code is in [`src/main/java`](src/main/java/io/github/mralireza82/baseconversion) and the tests in [`src/test/java`](src/test/java/io/github/mralireza82/baseconversion). With Java 17 or newer installed:
 
 ```bash
 ./gradlew test        # Windows: gradlew.bat test
@@ -796,6 +796,7 @@ With bits, bytes and hex in hand, the next step is the first real operation on t
 **Related articles:**
 
 - [XOR — Exclusive OR](https://github.com/Mr-Alireza82/XOR) *(next)*
+- [DES and Triple DES — Data Encryption Standard](https://github.com/Mr-Alireza82/DES)
 - DES — Data Encryption Standard *(planned)*
 - [ANSI X9.19 — Retail MAC Algorithm](https://github.com/Mr-Alireza82/ANSI-X9.19-Retail-MAC-Algorithm)
 
